@@ -28,7 +28,9 @@
                     width:100%; 
             }
             .about { 
+              font-size: 80%;
               visibility: none;
+              margin: 0 10px;
             }
             .eunbanyee {
               font-size: 90%;
