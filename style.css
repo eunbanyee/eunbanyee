@@ -30,7 +30,6 @@
               visibility: hidden;
             }
             .eunbanyee {
-              width: 100%;
               font-size: 90%;
             }
             .workwithme{
@@ -98,7 +97,7 @@
               transition:.3s;
               background-color: black;
             }
-            input[type=text]:onclick{
+            input[type=text]:focus{
               border-color: orange;
               box-shadow: 0 0 10px 0 orange;
             }
