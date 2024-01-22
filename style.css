@@ -1,132 +1,177 @@
+/*기본 시작*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
-        /*기본 시작*/
-        *{  padding:0;
-            margin:0;
-            font-family: sans-serif;
-          }
-        #wrap{ width:100%;
-            margin:0 auto;        
-        }
-        /*기본 종료*/
-        /*미디어쿼리*/
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
 
-        /*화면 너비 0-1200px*/
-        @media (max-width: 1260px) {
-            #wrap {width:100%;}
-          }
+/*기본 종료*/
+/*미디어쿼리*/
 
-        /*화면 너비 0-768px*/
-        @media (max-width: 768px) {
-            #wrap   {width: 100%;
-            }
-          }
-        /*화면 너비 0-480px*/
-        @media (max-width: 480px) {
-            #wrap   {width: 100%;
-            }
-            header {height: 300px;
-                    width:100%; 
-            }
-            .about { 
-              font-size: 80%;
-              visibility: none;
-              margin: 0 10px;
-            }
-            .eunbanyee {
-              font-size: 90%;
-            }
-            .workwithme{
-             padding-top: 100px; 
-            }
-            aside   {float:none; 
-                width:100%; 
-                height:300px;
-                align-items: center;
-            }
-            section {float:none; 
-                width:100%; 
-                height:300px;
-            }
-          }
-        /*미디어쿼리 종료*/
+/*화면 너비 0-1200px*/
+@media (max-width: 1260px) {
+  #wrap {
+    width: 100%;
+  }
+}
 
-        /*시맨틱 태그 기본 레이아웃 설정*/
-            header { 
-              width: 100%;
-              height: 50px;
-              background: black ;
-            }
-            nav    {
-              width: 100%;
-              height: 100px;
-              background: black ;
-            }
-            section { 
-              width: 100%;
-              height: 100vh;
-              background: black ;
-              text-align: center;
-              align-items: center;
-            }
-            footer {
-              width:100%;
-              height: 100px;
-              background: black ;
-              text-align: center;
-            }
-        /*시맨틱 태그 기본 레이아웃 설정 종료*/
-        /*태그*/
-            ul{ color: white;
-                list-style: none;
-            }
-            li{ color:white;
-                margin: 0 30px;
-            }
-            h4{ padding-top: 30px;
-                color: white;
-            }
-            p{ margin-top:25%;
-                text-align: center;
-                color: white;
-            }
-            input[type=text]{
-              width:200px;
-              border:2px solid #aaa;
-              border-radius:4px;
-              margin:8px 0;
-              outline:none; 
-              padding: 8px;
-              box-sizing: border-box;
-              transition:.3s;
-              background-color: black;
-            }
-            input[type=text]:focus{
-              border-color: orange;
-              box-shadow: 0 0 10px 0 orange;
-            }
+/*화면 너비 0-768px*/
+@media (max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+  .input_search{
+    display: none;
+  }
 
-        /*태그*/
-        /*클래스*/
-            .flexbox{
-                display: flex;
-                font-size: 1rem;
-                font-family: sans-serif;
-                align-items: center;
-                text-align: center;
-                margin-left: auto;
-                background-color: black;
-            }
-            .eunbanyee{ color: white;
-              margin-left: 15px;}
 
-            .eunbanyee:hover{
-              color: orange;
-            }
-            .workwithme{
-              color:white;
-              padding-top:150px;
-            }
-            .about:hover{
-              color: orange
-            }
-        /*클래스*/
+}
+
+/*화면 너비 0-480px*/
+@media (max-width: 480px) {
+  #wrap {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+  .about {
+    font-size: 80%;
+    margin: 0 10px;
+  }
+
+  .eunbanyee {
+    font-size: 90%;
+  }
+  .input_search{
+    display: none;
+  }
+
+  .workwithme {
+    padding-top: 100px;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
+}
+
+/*미디어쿼리 종료*/
+
+/*시맨틱 태그 기본 레이아웃 설정*/
+header {
+  width: 100%;
+  height: 50px;
+  background: black;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background: black;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  text-align: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: black;
+  text-align: center;
+}
+
+/*시맨틱 태그 기본 레이아웃 설정 종료*/
+/*태그*/
+ul {
+  color: white;
+  list-style: none;
+}
+
+li {
+  color: white;
+  margin: 0 30px;
+}
+
+h4 {
+  padding-top: 30px;
+  color: white;
+}
+
+p {
+  margin-top: 25%;
+  text-align: center;
+  color: white;
+}
+
+input[type=text] {
+  width: 200px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+  background-color: black;
+  text-align: center;
+}
+
+/*태그*/
+/*클래스*/
+.flexbox {
+  display: flex;
+  font-size: 1rem;
+  font-family: sans-serif;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  background-color: black;
+  position: relative;
+
+}
+
+.eunbanyee {
+  color: white;
+  margin-left: 15px;
+}
+
+.eunbanyee:hover {
+  color: orange;
+}
+
+.workwithme {
+  color: white;
+  padding-top: 150px;
+}
+
+.about:hover {
+  color: orange;
+}
+      
+.input_search{
+  color: white;
+  margin: 0 30px;
+}
+
+.lightinput[type=text]:focus {
+  border-color: orange;
+  box-shadow: 0 0 10px 0 orange;
+}
+
+
+/*클래스*/
