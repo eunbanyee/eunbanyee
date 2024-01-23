@@ -1,5 +1,9 @@
-function printDate() {
+$(document).ready(function() {
 
-    document.getElementById("date").innerHTML = Date();
-
+$(window).scroll(function() {
+if($(this).scrollTop() > 500) {
+$('#ul').fadeIn();
+} else {
+$('#ul').fadeOut();
 }
+});
