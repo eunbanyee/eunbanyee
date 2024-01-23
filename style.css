@@ -29,6 +29,10 @@
     display: none;
   }
 
+  .magnifying-glass{
+    display: none;
+  }
+
 
 }
 
@@ -165,13 +169,17 @@ input[type=text] {
       
 .input_search{
   color: white;
-  margin: 0 30px;
+  height: 1rem;
+
 }
 
 .lightinput[type=text]:focus {
   border-color: orange;
   box-shadow: 0 0 10px 0 orange;
 }
-
+.magnifying-glass{
+  margin:0; 
+  box-sizing: border-box;
+}
 
 /*클래스*/
